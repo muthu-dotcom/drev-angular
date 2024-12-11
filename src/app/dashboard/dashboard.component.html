@@ -1,0 +1,105 @@
+<div class="dashboard-container d-flex">
+  <div class="d-flex flex-column col-2 sidebar">
+    <div>
+      <h1 style="color:#00d7d0">DREV</h1>
+    </div>
+    <div>
+      <div id="cm" class="upload-section" #contextmenu>
+        <div class="upload-box">
+          <i class="fa fa-solid fa-download fa-2x downloadicon"></i>
+            <p class="text-upload">Drag & Drop files here</p>
+        </div> 
+
+      </div>
+    </div>
+    <div class="d-flex flex-column button-container">
+      <button pButton class="p-button-rounded gs_commonbutton ">Upload Files</button>
+      <button pButton class="p-button-rounded gs_commonbutton justify-content-center submit">Submit</button>
+    </div>
+    <div class="image-container">
+      <img src="assets/images/data-reveal.jpg" class="data-reveal" alt="Data Reveal" />
+    </div>
+  </div>
+  <div class="col-10">
+    <div class="d-flex me-3">
+      <div class ="col-4 welcometext">
+        <header>
+          <h1>Welcome back, Siva</h1>
+          <p style="font-family:monospace;font-size:11px;">Upload your document and reveal the data.</p>
+        </header>
+      </div>
+      <div class = "col-8">
+        <p-menubar class="menubar-class">
+          <ng-template pTemplate="end">
+            <div class="menu-items d-flex mt-4">
+              <div class="d-flex me-5">
+                <ul class="ms-2 nav-item">Drev</ul>
+                <ul class="ms-2 nav-item">|</ul>
+                <ul class="ms-2 nav-item">Data Classification</ul>
+              </div>
+              <div class="d-flex">
+                <i class="pi pi-bell fa-regular fa-bell me-3 bell"></i>
+               <img src="assets/images/user.png" class="profile-logo" alt="User Profile" />
+
+      
+              </div>
+
+            </div>
+          </ng-template>
+        </p-menubar>
+      </div>
+
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <div class="info-box">
+          <div class="d-flex">
+            <i class="fa-solid fa-file-lines mt-1"></i>
+            <p class="ms-2">No of files uploaded</p>
+          </div>
+          <p style="color: green;margin-left:22px">6</p>
+        </div>
+        <div class="info-box">
+          <div class="d-flex">
+            <i class="fa-solid fa-calendar-days mt-1"></i>
+            <p class="ms-2">Uploaded date</p>
+          </div>
+
+          <p style="color:#276a97;font-weight:bold;margin-left:22px">8-12-2024</p>
+        </div>
+      </div>
+        
+    <div class="data-section">
+      <h4 class="generate-header">Generated data</h4>
+      <!-- <p-panel header="Generated data"> -->
+        <p-table [value]="files" class="data-table">
+          <ng-template pTemplate="header">
+            <tr>
+              <th>File name</th>
+              <th>File type</th>
+              <th>File sub type</th>
+              <th>Predicted file type</th>
+              <th>Predicted sub file type</th>
+              <th>Score</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-file>
+            <tr>
+              <td>{{ file.fileName }}</td>
+              <td>{{ file.fileType }}</td>
+              <td>{{ file.fileSubType }}</td>
+              <td>{{ file.predictedFileType }}</td>
+              <td>{{ file.predictedSubFileType }}</td>
+              <td [ngStyle]="{'color': getScoreColor(file.score)}">{{ file.score }}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      <!-- </p-panel> -->
+
+    </div>
+    </div>
+
+
+  </div>
+
+  

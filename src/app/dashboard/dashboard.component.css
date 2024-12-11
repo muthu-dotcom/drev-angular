@@ -1,0 +1,191 @@
+.dashboard-container {
+    color: #fff;
+    background-color: #080f29;
+    padding: 20px 0px 0px 0px;
+    height: 100vh;
+  
+    header {
+      /* text-align: center; */
+      margin-bottom: 20px;
+  
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    .text-upload {
+      padding-top: 5px;
+      font-size: 10px;
+    }
+
+    .sidebar {
+      align-items: center;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .menubar-class .p-menubar{
+      background-color: #080f29;
+      border:0px;
+      color: #fff;
+    }
+  
+    .upload-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      .upload-box {
+        background: #202938;
+        padding: 20px;
+        /* text-align: center; */
+        border: 2px dashed #3d4f66;
+        margin-top: 30px;
+        text-align: center;
+        border: 1px solid #2196F3;
+        border-radius:1rem;
+        width: 150px;
+        /* p {
+          margin: 0 0 10px;
+        } */
+  
+        .upload-btn {
+          background-color: #0c79d6;
+          border: none;
+        }
+
+        .downloadicon {
+          color:#00d7d0;
+        }
+      }
+  
+      .submit-btn {
+        background-color: #00c851;
+        border: none;
+      }
+    }
+  
+    .info-section {
+      display: flex;
+      /* justify-content: space-around; */
+      margin-bottom: 20px;
+      background-color: #070c22;
+  
+      .info-box {
+        background: #0b1332;
+        padding: 10px 40px 0px 10px;
+        /* text-align: center; */
+        border-radius: 4px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+  
+        h2 {
+          margin: 0;
+        }
+
+      }
+    }
+  
+    .data-section {
+      background-color: #050d22; /* Background color for the entire div */
+      color: #fff; /* Text color */
+      padding: 20px; /* Add padding for spacing */
+      border-radius: 8px; /* Optional: Adds rounded corners */
+      .data-table {
+        /* background-color: #1e293b;
+  
+        th, td {
+          color: #fff;
+        } */
+        width: 100%; /* Make the table full-width */
+        border-collapse: collapse; /* Remove gaps between table cells */
+      }
+
+
+      .data-table th, .data-table td {
+        padding: 10px 15px; /* Add padding for table cells */
+        text-align: left; /* Align text to the left */
+        border-bottom: 1px solid #2a3b5d; /* Subtle border for row separation */
+        color: #276a97; /* Text color for table content */
+      }
+
+      .data-table th {
+        color: #a9b3c5; /* Lighter color for header text */
+        font-weight: bold; /* Make header text bold */
+      }
+      
+      .data-table tr:hover {
+        background-color: #1a2a47; /* Highlight row on hover */
+      }
+      
+      .data-table td {
+        background-color: #050d22; /* Ensure cells match div background */
+      }
+
+      .data-table .p-datatable .p-datatable-thead > tr > th {
+        background: none;
+      }
+
+      .generate-header {
+        background-color:#050d22;
+        border-bottom:1px solid #2a3b5d;
+      }
+    }
+
+    .gs_commonbutton {
+      background-color: var(--primary_color) !important;
+      justify-content: center;
+      /* border: var(--primary_color) !important; */
+      height: 35px;
+      width:150px;
+      /* font-size: 13px !important; */
+      padding: 3px;
+      color: white !important;
+      /* width: -moz-fit-content !important; */
+      /* width: fit-content !important; */
+      /* border-radius: 4px !important; */
+      font-family: "Inter";
+      text-align: center;
+      font-weight: bold;
+
+      .p-button-label {
+        flex: none;
+      }
+    }
+
+    .info-container {
+        padding-left: 20px;
+        background-color: #03081c;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        padding-right: 20px;
+    }
+
+    .submit {
+      background-color: #00d7d0 !important;
+      color:black !important;
+    }
+
+    .button-container {
+      gap: 10px;
+    }
+    
+    .profile-logo{
+      width: 25px;
+      height: 25px;
+    }
+
+    .bell {
+      margin-top: 6px;
+    }
+  }
+
+.welcometext {
+  padding-left: 20px;
+}
+  
